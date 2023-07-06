@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login page</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        /* navbar section */
+        
+        .navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(44, 43, 43);
+            height: 100px;
+        }
+        
+        .ig {
+            position: absolute;
+            left: 10px;
+        }
+        
+        .ig img {
+            display: block;
+            height: 80px;
+        }
+        
+        .navbar ul {
+            display: flex;
+        }
+        
+        .navbar ul li {
+            list-style: none;
+        }
+        
+        .navbar ul li a {
+            display: block;
+            margin: 2px 8px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+        
+        .navbar ul li a:hover {
+            padding: 0px 8px;
+            border-radius: 5px;
+            background-color: rgb(97, 94, 94);
+            color: chartreuse;
+        }
+        
+        .bt {
+            position: absolute;
+            right: 10px;
+        }
+        
+        .btn {
+            background-color: rgb(228, 68, 9);
+            color: cornsilk;
+            padding: 3px 14px;
+            margin: 0px 15px;
+            cursor: pointer;
+        }
+        /* container section */
+        
+        #container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 400px;
+            background-color: rgb(255, 155, 155);
+        }
+        
+        #container .primary {
+            margin: 20px;
+            font-size: 50px;
+            color: rgb(12, 11, 11);
+        }
+        
+        #container P {
+            padding: 8px 2px;
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+        }
+        
+        .info {
+            margin: 20px 0px;
+        }
+        
+        .info .sec {
+            text-align: center;
+            margin: 8px;
+        }
+        
+        .dn {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .dn .n {
+            margin: 15px 25px;
+            padding: 5px 11px;
+            background-color: #33465a;
+            border-radius: 18px;
+        }
+        
+        .dn img {
+            height: 60px;
+        }
+        
+        .box {
+            height: 200px;
+        }
+        
+        .box h4 {
+            text-align: center;
+            margin: 10px 0px;
+            font-size: 20px;
+        }
+        
+        .serve {
+            display: flex;
+            margin: 2px 10px;
+            align-items: center;
+            height: 163px;
+            background-color: #d5d5d5;
+            box-shadow: 0px 0px 4px black
+        }
+        
+        .serve .nb {
+            padding: 10px;
+            margin: 2px 37px;
+        }
+        
+        .serve img {
+            display: block;
+            height: 60px;
+            margin: 2px 80px;
+        }
+        
+        .serve #jp {
+            text-align: center;
+            padding: 10px;
+        }
+        /* .tb {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .tb table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        table {
+            border-spacing: 10px 5px;
+        } */
+        
+        .ft {
+            display: flex;
+            justify-content: center;
+            height: 150px;
+            margin: 10px 0px;
+        }
+        
+        .lb label {
+            padding: 5px 0px;
+            display: block;
+            text-align: center;
+            color: white;
+        }
+        
+        .lb input {
+            display: block;
+            margin: auto;
+            width: auto;
+        }
+        
+        .bg {
+            width: 250px;
+            height: 165px;
+            background-color: rgb(29, 28, 28);
+        }
+        
+        footer {
+            background-color: #3b3b3b;
+            height: 150px;
+            display: flex;
+            margin: 22px 0px;
+            justify-content: center;
+        }
+        
+        footer .list {
+            position: absolute;
+            margin: 24px 55px;
+            right: 50px;
+        }
+        
+        footer .list a {
+            display: block;
+            padding: 8px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+        }
+        
+        footer h5 {
+            line-height: 180px;
+            font-size: 30px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="ig">
+            <img src="pics/my logo.png">
+        </div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">ContactMe</a></li>
+        </ul>
+        <div class="bt">
+            <button class="btn">
+                CLick 
+            </button>
+        </div>
+    </div>
+    <div id="container">
+        <h1 class="primary">Graphic & Web Designer</h1>
+        <P>Hello,I'm Koushik Koner I'm A Professional Html,Css Expertise</P>
+    </div>
+
+    <div class="info">
+        <h1 class="sec"> My Hobbies</h1>
+        <div class="dn">
+            <div class="n">
+                <img src="pics/tvlogo.png">
+            </div>
+            <div class="n">
+                <img src="pics/music.png">
+            </div>
+            <div class="n">
+                <img src="pics/cricket.png">
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <h4 class="p4">My Skills</h4>
+        <div class="serve">
+            <div class="nb">
+                <img src="pics/koushik logo.png">
+                <p id="jp">koushik</p>
+            </div>
+            <div class="nb">
+                <img src="pics/koushik logo.png">
+                <p id="jp">koushik</p>
+            </div>
+            <div class="nb">
+                <img src="pics/koushik logo.png">
+                <p id="jp">koushik</p>
+            </div>
+
+        </div>
+        <!-- <div class="tb">
+            <table>
+                <tr>
+                    <th>KOu</th>
+                    <th>KOu</th>
+                    <th>num</th>
+                </tr>
+                <tr>
+                    <td>koner</td>
+                    <td>koner</td>
+                    <td>220</td>
+                </tr>
+
+            </table>
+        </div>
+        Download:<progress max="50">meter</progress>
+        <marquee direction='right' scrollamount="20">Go go</marquee>
+        kk
+        <select>
+            <optgroup label="Swedish Cars">
+        <option>Koner</option>
+        <option>Koner</option>
+        <option>Koner</option>
+        </optgroup>
+    </select> -->
+        <div class="ft">
+            <div class="bg">
+                <div class="lb">
+                    <label for="name">Name</label>
+                    <input type="text" name="" id="">
+                    <label for="name">address</label>
+                    <input type="text" name="" id="">
+                    <label for="name">password</label>
+                    <input type="password" name="" id="">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h5>www.&copy;copyright.com</h5>
+            <div class="list">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Feedback</a>
+            </div>
+        </footer>
+
+
+
+
+</body>
+
+</html>
